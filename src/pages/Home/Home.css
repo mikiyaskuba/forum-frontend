@@ -1,0 +1,121 @@
+/* Home.css */
+
+.home-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.ask-question-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome-message {
+    font-size: 1.2em;
+}
+
+.questions-section h2 {
+    margin-bottom: 20px;
+}
+
+.questions-list {
+    list-style: none;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+.question-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.question-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.question-user {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.question-user .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: #007bff 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-user .avatar .icon {
+    font-size: 20px;
+    color: #007bff;
+}
+
+.question-text {
+    flex-grow: 1;
+}
+
+.question-link {
+    font-size: 1.5em;
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .home-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ask-question-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .question-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .question-link {
+        margin-bottom: 10px;
+    }
+}
